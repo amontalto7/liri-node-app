@@ -2,9 +2,13 @@ require("dotenv").config();
 var keys = require("./keys");
 var fs = require("fs");
 var Spotify = require("node-spotify-api");
+var axios = require("axios");
+
 
 var spotify = new Spotify(keys.spotify);
-var args = process.argv.slice(2);
+var command = process.argv[2];          // get the command
+var args = process.argv.slice(3);       // get all remaining parameters
+
 
 function getConcert() {
     console.log("get concert");
@@ -14,8 +18,31 @@ function getSong() {
     console.log("get song");
 }
 
-function getMovie() {
+function getMovie(p) {
     console.log("get movie");
+    var movieName = p.join("+");
+    // Then run a request with axios to the OMDB API with the movie specified
+    var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+
+    
+    axios.get(queryUrl).then(
+        function(response){
+        console.log(response);
+        // If the request with axios is successful
+        // ...
+
+            if (response.status === 200){
+            // Then log the Release Year for the movie
+             console.log(response.data.Year);
+
+            }
+     }
+    )
+
+// This line is just to help us debug against the actual URL.
+console.log(queryUrl);
+
+
 }
 
 function readFile() {
@@ -23,7 +50,7 @@ function readFile() {
 }
 
 
-switch(args[0]) {
+switch(command) {
     case "concert-this":
         // assume args[1] is an artist name
         getConcert();
@@ -33,7 +60,7 @@ switch(args[0]) {
         getSong();
         break;
     case "movie-this":
-        getMovie();
+        getMovie(args);
         break;
     case "do-what-it-says":
         readFile();
@@ -41,31 +68,3 @@ switch(args[0]) {
     default:
         console.log("invalid command");
 }
-
-
-// var movieParams = process.argv.slice(2);
-// var movieName = movieParams.join("+");
-// // ...
-
-
-// // Then run a request with axios to the OMDB API with the movie specified
-// var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
-// // Then create a request with axios to the queryUrl
-// // ...
-
-// axios.get(queryUrl).then(
-//     function(response){
-//         // console.log(response);
-//         // If the request with axios is successful
-//         // ...
-
-//         if (response.status === 200){
-//             // Then log the Release Year for the movie
-//             console.log(response.data.Year);
-
-//         }
-//     }
-// )
-
-// // This line is just to help us debug against the actual URL.
-// console.log(queryUrl);
