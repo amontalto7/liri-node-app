@@ -1,0 +1,1 @@
+// queryURL = "https://rest.bandsintown.com/artists/" + artist + "?app_id=codingbootcamp
