@@ -33,8 +33,18 @@ function getMovie(p) {
 
             if (response.status === 200){
             // Then log the Release Year for the movie
-             console.log(response.data.Year);
-
+            var cast = response.data.Actors.split(",")
+            console.log("Title: " + response.data.Title);
+            console.log("Year: " + response.data.Year);
+            console.log("IMDB Rating: " + response.data.imdbRating);
+            console.log("Rotten Tomatoes Rating: ??????" + JSON.stringify(response.data.Ratings));
+            console.log("Country: " + response.data.Country);
+            console.log("Language: " + response.data.English);
+            console.log("\nPlot: \n" + response.data.Plot);
+            console.log("\nCast:");
+            cast.forEach(element => {
+                console.log(" " +element.trim())
+            });    
             }
      }
     )
