@@ -52,7 +52,10 @@ function readFile() {
 }
 
 function getMovie(p) {
-  var movieName = p.join("+");
+    var movieName = "Mr+Nobody";
+    if (p.length > 0) {
+        movieName = p.join("+");
+    } else {  console.log("No movie specified! Providing data for 'Mr. Nobody'\n");}
 
   function getRottenTomatoesScore(r) {
     for (var i = 0; i < r.length; i++) {
