@@ -13,7 +13,8 @@ var args = process.argv.slice(3); // get all remaining parameters
 
 function getSong(s) {
   console.log("get song");
-  var song = s.join(" ");
+  var song = "The Sign";
+  if (s.length > 0) {song = s.join(" ")};
   spotify.search({ type: 'track', query: song }, function(err, data) {
     if (err) {
       return console.log('Error occurred: ' + err);
