@@ -11,9 +11,18 @@ var command = process.argv[2]; // get the command
 var args = process.argv.slice(3); // get all remaining parameters
 
 
-function getSong() {
+function getSong(s) {
   console.log("get song");
+  var song = s.join(" ");
+  spotify.search({ type: 'track', query: song }, function(err, data) {
+    if (err) {
+      return console.log('Error occurred: ' + err);
+    }
+   
+  console.log(data.tracks.items[0].artists[0].name); 
+  });
 }
+
 
 function readFile() {
   console.log("read file");
@@ -27,7 +36,7 @@ switch (command) {
     break;
   case "spotify-this-song":
     // assume args[1] is a song name
-    getSong();
+    getSong(args);
     break;
   case "movie-this":
     movies.getMovie(args);
