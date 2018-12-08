@@ -1,5 +1,7 @@
 var axios = require("axios");
 var moment = require("moment");
+const chalk = require('chalk');
+const key = chalk.keyword('red');
 
 module.exports = {
   getConcert: function(p) {
@@ -15,7 +17,7 @@ module.exports = {
       .then(function(response) {
         // console.log(response);
         if (response.data.length > 0) {
-          console.log("\n" + artistName + " is performing at...");
+          console.log("\n" + key(artistName) + " is performing at...");
           for (var i = 0; i < response.data.length; i++) {
             console.log("\n" + response.data[i].venue.name);
             // console.log(response.data[i].venue)

@@ -1,4 +1,6 @@
 var axios = require("axios");
+const chalk = require('chalk');
+const key = chalk.keyword('orange');
 
 module.exports = {
 
@@ -31,20 +33,20 @@ getMovie: function(p) {
       var cast = response.data.Actors.split(",");
       var rtRating = getRottenTomatoesScore(response.data.Ratings);
 
-      console.log("\nTitle: " + response.data.Title);
-      console.log("Year: " + response.data.Year);
-      console.log("IMDB Rating: " + response.data.imdbRating);
-      console.log("Rotten Tomatoes Rating: " + rtRating);
+      console.log(key("\nTitle: ") + response.data.Title);
+      console.log(key("Year: ") + response.data.Year);
+      console.log(key("IMDB Rating: ") + response.data.imdbRating);
+      console.log(key("Rotten Tomatoes Rating: ") + rtRating);
       // JSON.stringify(response.data.Ratings,undefined,2));
-      console.log("Country: " + response.data.Country);
-      console.log("Language(s): " + response.data.Language);
-      console.log("\nPlot: \n" + response.data.Plot);
-      console.log("\nCast:");
+      console.log(key("Country: ") + response.data.Country);
+      console.log(key("Language(s): ") + response.data.Language);
+      console.log(key("\nPlot: \n") + response.data.Plot);
+      console.log(key("\nCast:"));
       cast.forEach(element => {
         console.log(" " + element.trim());
       });
     }
-    console.log("\n-------------------------------------------\n");
+    // console.log("\n-------------------------------------------\n");
   });
 
   // This line is just to help us debug against the actual URL.
