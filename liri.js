@@ -12,16 +12,32 @@ var args = process.argv.slice(3); // get all remaining parameters
 
 
 function getSong(s) {
-  console.log("get song");
-  var song = "The Sign";
+  // https://www.npmjs.com/package/node-spotify-api
+  var song = "The Sign Ace of Base";
   if (s.length > 0) {song = s.join(" ")};
-  spotify.search({ type: 'track', query: song }, function(err, data) {
-    if (err) {
-      return console.log('Error occurred: ' + err);
-    }
-   
-  console.log(data.tracks.items[0].artists[0].name); 
+  
+  spotify.search({ type: 'track', query: song, limit: 1 })
+  .then(function(response) {
+    // console.log(response)
+    console.log("Artist: " + response.tracks.items[0].artists[0].name);
+    console.log("Song: " + response.tracks.items[0].name);
+    console.log("Preview: " + response.tracks.items[0].preview_url);
+    console.log("Album Title: " + response.tracks.items[0].album.name);
+  })
+  .catch(function(err) {
+    console.log(err);
   });
+  
+  
+//   , function(err, data) {
+//     if (err) {
+//       return console.log('Error occurred: ' + err);
+//     }
+//     console.log(data.tracks);
+//   for (var i = data.tracks.items.length-1; i >= 0; i--) {
+//   console.log(data.tracks.items[i].artists[0].name); 
+// }
+//   });
 }
 
 
