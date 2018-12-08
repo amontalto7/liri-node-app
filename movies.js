@@ -6,7 +6,7 @@ getMovie: function(p) {
     var movieName = "Mr+Nobody";
     if (p.length > 0) {
         movieName = p.join("+");
-    } else {  console.log("No movie specified! Providing data for 'Mr. Nobody'\n");}
+    } else {  console.log("\nNo movie specified! Providing data for 'Mr. Nobody'\n");}
 
   function getRottenTomatoesScore(r) {
     for (var i = 0; i < r.length; i++) {
@@ -31,7 +31,7 @@ getMovie: function(p) {
       var cast = response.data.Actors.split(",");
       var rtRating = getRottenTomatoesScore(response.data.Ratings);
 
-      console.log("Title: " + response.data.Title);
+      console.log("\nTitle: " + response.data.Title);
       console.log("Year: " + response.data.Year);
       console.log("IMDB Rating: " + response.data.imdbRating);
       console.log("Rotten Tomatoes Rating: " + rtRating);
@@ -44,6 +44,7 @@ getMovie: function(p) {
         console.log(" " + element.trim());
       });
     }
+    console.log("\n-------------------------------------------\n");
   });
 
   // This line is just to help us debug against the actual URL.

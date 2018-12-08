@@ -19,6 +19,7 @@ getSong:    function(s) {
           console.log("Song: " + response.tracks.items[0].name);
           console.log("Preview: " + response.tracks.items[0].preview_url);
           console.log("Album Title: " + response.tracks.items[0].album.name);
+          console.log("\n-------------------------------------------\n");
         })
         .catch(function(err) {
           console.log(err);
