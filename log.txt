@@ -1,0 +1,96 @@
+> node liri.js spotify-this-song Juicy notorious
+
+Artist: The Notorious B.I.G.
+Song: Juicy
+Preview: https://p.scdn.co/mp3-preview/04edad628874515d2316e6946a2f815f645328f1?cid=a1e3b4a3f8b94cc983bfdb3a46a36bdd
+Album Title: Ready To Die The Remaster
+
+------------------------------------------------
+> node liri.js movie-this Forrest Gump
+Title: Forrest Gump
+Year: 1994
+IMDB Rating: 8.8
+Rotten Tomatoes Rating: 73%
+Country: USA
+Language(s): English
+
+Plot: 
+The presidencies of Kennedy and Johnson, Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.
+
+Cast:
+ Tom Hanks
+ Rebecca Williams
+ Sally Field
+ Michael Conner Humphreys
+------------------------------------------------
+> node liri.js spotify-this-song "I Want it That Way"
+
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=a1e3b4a3f8b94cc983bfdb3a46a36bdd
+Album Title: The Hits--Chapter One
+
+------------------------------------------------
+> node liri.js concert-this Rolling Stones
+
+Hard Rock Stadium
+Miami Gardens, FL, United States
+04/20/2019
+
+TIAA Bank Field
+Jacksonville, FL, United States
+04/24/2019
+
+NRG Arena
+Houston, TX, United States
+04/28/2019
+
+State Farm Stadium
+Glendale, AZ, United States
+05/07/2019
+
+Rose Bowl Stadium
+Pasadena, CA, United States
+05/11/2019
+
+Levi's Stadium
+Santa Clara, CA, United States
+05/18/2019
+
+CenturyLink Field
+Seattle, WA, United States
+05/22/2019
+
+Broncos Stadium at Mile High
+Denver, CO, United States
+05/26/2019
+
+FedEx Field
+Landover, MD, United States
+05/31/2019
+
+Lincoln Financial Field
+Philadelphia, PA, United States
+06/04/2019
+
+Gillette Stadium
+Foxborough, MA, United States
+06/08/2019
+
+MetLife Stadium
+East Rutherford, NJ, United States
+06/13/2019
+
+MetLife Stadium
+East Rutherford, NJ, United States
+06/17/2019
+
+Soldier Field
+Chicago, IL, United States
+06/21/2019
+
+Soldier Field
+Chicago, IL, United States
+06/25/2019
+
+------------------------------------------------

@@ -18,17 +18,15 @@ function readFile() {
     var lineArr = data.split("\n");
 
     lineArr.forEach(function(line) {
-    // Split input it by commas (to make it more readable)
-    var dataArr = line.split(",");
+      // Split input it by commas (to make it more readable)
+      var dataArr = line.split(",");
 
-    // We will then re-display the content as an array for later use.
-    // console.log(dataArr);
-    command = dataArr[0];
-    args = dataArr.slice(1);
-    liriBot();
-
-  })
-
+      // We will then re-display the content as an array for later use.
+      // console.log(dataArr);
+      command = dataArr[0];
+      args = dataArr.slice(1);
+      liriBot();
+    });
   });
 }
 
@@ -50,6 +48,7 @@ function liriBot() {
       break;
     default:
       console.log("invalid command");
+      console.log("> node liri.js <concert-this | spotify-this-song | movie-this | do-what-it-says> <search term>");
   }
 }
 
