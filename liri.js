@@ -35,7 +35,7 @@ function displayHelp(){
   console.log("node liri.js concert-this <artist/band>");
   console.log("node liri.js spotify-this-song <song name>");
   console.log("node liri.js movie-this <movie name>");
-  console.log("node liri.js do-what-it-says        (reads commands from random.txt)");
+  console.log("node liri.js do-what-it-says   (reads commands from random.txt)");
 }
 
 function liriBot() {
