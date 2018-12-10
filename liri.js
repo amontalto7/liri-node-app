@@ -30,6 +30,14 @@ function readFile() {
   });
 }
 
+function displayHelp(){
+  console.log("---- Valid Commands ----");
+  console.log("node liri.js concert-this <artist/band>");
+  console.log("node liri.js spotify-this-song <song name>");
+  console.log("node liri.js movie-this <movie name>");
+  console.log("node liri.js do-what-it-says        (reads commands from random.txt)");
+}
+
 function liriBot() {
   switch (command) {
     case "concert-this":
@@ -45,6 +53,9 @@ function liriBot() {
       break;
     case "do-what-it-says":
       readFile();
+      break;
+    case "-help":
+      displayHelp();
       break;
     default:
       console.log("invalid command");
