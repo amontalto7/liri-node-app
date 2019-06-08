@@ -1,12 +1,111 @@
-> node liri.js spotify-this-song Juicy notorious
+> node liri.js concert-this foo fighters
 
-Artist: The Notorious B.I.G.
-Song: Juicy
-Preview: https://p.scdn.co/mp3-preview/04edad628874515d2316e6946a2f815f645328f1?cid=a1e3b4a3f8b94cc983bfdb3a46a36bdd
-Album Title: Ready To Die The Remaster
+I AM THE HIGHWAY: A TRIBUTE TO CHRIS CORNELL
+Los Angeles, CA, United States
+01/16/2019
+
+DIRECTV Super Saturday Night
+Atlanta, GA, United States
+02/02/2019
+
+The Fillmore New Orleans
+New Orleans, LA, United States
+02/15/2019
+
+The Fillmore New Orleans
+New Orleans, LA, United States
+02/16/2019
+
+Sonic Temple Festival (May 17-19)
+Columbus, OH, United States
+05/17/2019
+
+Pula Arena
+Pula, Croatia
+06/19/2019
+
+Southside Festival
+Neuhausen Ob Eck, Germany
+06/21/2019
+
+Hurricane Festival
+Scheeßel, Germany
+06/23/2019
+
+Faengslet
+Horsens, Denmark
+06/25/2019
+
+Koengen Fortress
+Bergen, Norway
+06/27/2019
+
+Lollapalooza Stockholm (28-29 June)
+Stockholm, Sweden
+06/29/2019
+
+Sziget Festival
+Budapest, Hungary
+08/13/2019
+
+Glasgow Summer Sessions
+Glasgow, United Kingdom
+08/17/2019
+
+Vital Festival
+Belfast, United Kingdom
+08/19/2019
+
+RDS Arena
+Dublin, Ireland
+08/21/2019
+
+Leeds Festival
+Leeds, United Kingdom
+08/23/2019
+
+Reading Festival
+Reading, United Kingdom
+08/25/2019
 
 ------------------------------------------------
+> node liri.js movie-this star+wars
+
+Title: Star Wars: Episode IV - A New Hope
+Year: 1977
+IMDB Rating: 8.6
+Rotten Tomatoes Rating: 93%
+Country: USA
+Language(s): English
+
+Plot: 
+Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the evil Darth Vader.
+
+Cast:
+ Mark Hamill
+ Harrison Ford
+ Carrie Fisher
+ Peter Cushing
+------------------------------------------------
+> node liri.js movie-this Mr+Nobody
+
+Title: Mr. Nobody
+Year: 2009
+IMDB Rating: 7.9
+Rotten Tomatoes Rating: 67%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language(s): English, Mohawk
+
+Plot: 
+A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+
+Cast:
+ Jared Leto
+ Sarah Polley
+ Diane Kruger
+ Linh Dan Pham
 > node liri.js movie-this Forrest Gump
+
 Title: Forrest Gump
 Year: 1994
 IMDB Rating: 8.8
@@ -22,14 +121,6 @@ Cast:
  Rebecca Williams
  Sally Field
  Michael Conner Humphreys
-------------------------------------------------
-> node liri.js spotify-this-song "I Want it That Way"
-
-Artist: Backstreet Boys
-Song: I Want It That Way
-Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=a1e3b4a3f8b94cc983bfdb3a46a36bdd
-Album Title: The Hits--Chapter One
-
 ------------------------------------------------
 > node liri.js concert-this Rolling Stones
 
@@ -92,5 +183,280 @@ Chicago, IL, United States
 Soldier Field
 Chicago, IL, United States
 06/25/2019
+
+------------------------------------------------
+> node liri.js spotify-this-song "I Want it That Way"
+
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=a1e3b4a3f8b94cc983bfdb3a46a36bdd
+Album Title: The Hits--Chapter One
+
+------------------------------------------------
+> node liri.js movie-this star+wars
+
+Title: Star Wars: Episode IV - A New Hope
+Year: 1977
+IMDB Rating: 8.6
+Rotten Tomatoes Rating: 93%
+Country: USA
+Language(s): English
+
+Plot: 
+Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the evil Darth Vader.
+
+Cast:
+ Mark Hamill
+ Harrison Ford
+ Carrie Fisher
+ Peter Cushing
+------------------------------------------------
+> node liri.js spotify-this-song imagine
+
+Artist: Imagine Dragons
+Song: Bad Liar
+Preview: null
+Album Title: Origins (Deluxe)
+
+------------------------------------------------
+> node liri.js movie-this gangs
+
+Title: Gangs
+Year: 2009
+IMDB Rating: 3.9
+Rotten Tomatoes Rating: undefined
+Country: Germany
+Language(s): German
+
+Plot: 
+This is the story of 17-year-old Flo and his gang, the Rox. A story of great romance and hard choices. When his brother, the leader of the Rox, gets into trouble, Flo has to decide between ...
+
+Cast:
+ Jimi Blue Ochsenknecht
+ Aaron Le
+ Wilson Gonzalez
+ Emilia Schüle
+------------------------------------------------
+> node liri.js movie-this gangs+of+new+york
+
+Title: Gangs of New York
+Year: 2002
+IMDB Rating: 7.5
+Rotten Tomatoes Rating: 74%
+Country: USA, Italy
+Language(s): English, Irish, Chinese, Latin
+
+Plot: 
+In 1863, Amsterdam Vallon returns to the Five Points area of New York City seeking revenge against Bill the Butcher, his father's killer.
+
+Cast:
+ Leonardo DiCaprio
+ Daniel Day-Lewis
+ Cameron Diaz
+ Jim Broadbent
+------------------------------------------------
+> node liri.js spotify-this-song juicy
+
+Artist: Rae Sremmurd
+Song: Powerglide (feat. Juicy J) - From SR3MM
+Preview: null
+Album Title: SR3MM
+
+------------------------------------------------
+> node liri.js spotify-this-song juicy biggie
+
+Artist: The Notorious B.I.G.
+Song: Juicy
+Preview: https://p.scdn.co/mp3-preview/04edad628874515d2316e6946a2f815f645328f1?cid=a1e3b4a3f8b94cc983bfdb3a46a36bdd
+Album Title: Ready To Die The Remaster
+
+------------------------------------------------
+> node liri.js movie-this the+big+sleep
+
+Title: The Big Sleep
+Year: 1946
+IMDB Rating: 8.0
+Rotten Tomatoes Rating: 96%
+Country: USA
+Language(s): English
+
+Plot: 
+Private detective Philip Marlowe is hired by a rich family. Before the complex case is over, he's seen murder, blackmail, and what might be love.
+
+Cast:
+ Humphrey Bogart
+ Lauren Bacall
+ John Ridgely
+ Martha Vickers
+------------------------------------------------
+> node liri.js concert-this billy joel
+undefined
+------------------------------------------------
+> node liri.js concert-this migos
+
+Heaton Park Manchester
+Manchester, United Kingdom
+06/09/2019
+
+Staples Center
+Los Angeles, CA, United States
+06/22/2019
+
+Industriezone Balendijk
+Lommel, Belgium
+06/28/2019
+
+Stockholm Stadion
+Stockholm, Sweden
+07/02/2019
+
+Finsbury Park
+London, United Kingdom
+07/05/2019
+
+Alter Rebstockpark
+Frankfurt, United Kingdom
+07/06/2019
+
+Hippodrome de Longchamp
+Paris, France
+07/20/2019
+
+Hippodrome  Longchamp
+Paris, France
+07/21/2019
+
+Honda Center
+Anaheim, CA, United States
+08/10/2019
+
+------------------------------------------------
+> node liri.js spotify-this-song bye bye bye
+
+Artist: *NSYNC
+Song: Bye Bye Bye
+Preview: https://p.scdn.co/mp3-preview/72b91cb27fac7beb50a2deffdd8b821fba5ba950?cid=a1e3b4a3f8b94cc983bfdb3a46a36bdd
+Album Title: No Strings Attached
+
+------------------------------------------------
+> node liri.js movie-this endgame
+
+Title: Endgame
+Year: 2011
+IMDB Rating: 7.7
+Rotten Tomatoes Rating: undefined
+Country: Canada
+Language(s): English
+
+Plot: 
+Endgame is an original drama series centering on brilliant chess master, Arkady Balagan. Traumatized by the murder of his fiancée, Balagan has become a prisoner in his luxury Vancouver ...
+
+Cast:
+ Shawn Doyle
+ Patrick Gallagher
+ Katharine Isabelle
+ Carmen Aguirre
+------------------------------------------------
+> node liri.js movie-this avengers+endgame
+
+Title: Avengers: Endgame
+Year: 2019
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country: USA
+Language(s): English, Japanese, Xhosa
+
+Plot: 
+After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to undo Thanos' actions and restore order to the universe.
+
+Cast:
+ Robert Downey Jr.
+ Chris Evans
+ Mark Ruffalo
+ Chris Hemsworth
+------------------------------------------------
+> node liri.js movie-this Forrest Gump
+
+Title: Forrest Gump
+Year: 1994
+IMDB Rating: 8.8
+Rotten Tomatoes Rating: 72%
+Country: USA
+Language(s): English
+
+Plot: 
+The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.
+
+Cast:
+ Tom Hanks
+ Rebecca Williams
+ Sally Field
+ Michael Conner Humphreys
+------------------------------------------------
+> node liri.js spotify-this-song "I Want it That Way"
+
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=a1e3b4a3f8b94cc983bfdb3a46a36bdd
+Album Title: The Hits--Chapter One
+
+------------------------------------------------
+> node liri.js concert-this Rolling Stones
+
+FedEx Field
+Landover, MD, United States
+07/03/2019
+
+Gillette Stadium
+Foxborough, MA, United States
+07/07/2019
+
+Mercedes-Benz Superdome
+New Orleans, LA, United States
+07/14/2019
+
+TIAA Bank Field
+Jacksonville, FL, United States
+07/19/2019
+
+Lincoln Financial Field
+Philadelphia, PA, United States
+07/23/2019
+
+NRG Arena
+Houston, TX, United States
+07/27/2019
+
+MetLife Stadium
+East Rutherford, NJ, United States
+08/01/2019
+
+MetLife Stadium
+East Rutherford, NJ, United States
+08/05/2019
+
+Broncos Stadium at Mile High
+Denver, CO, United States
+08/10/2019
+
+CenturyLink Field
+Seattle, WA, United States
+08/14/2019
+
+Levi's Stadium
+Santa Clara, CA, United States
+08/18/2019
+
+Rose Bowl Stadium
+Pasadena, CA, United States
+08/22/2019
+
+State Farm Stadium
+Glendale, AZ, United States
+08/26/2019
+
+Hard Rock Stadium
+Miami Gardens, FL, United States
+08/31/2019
 
 ------------------------------------------------
